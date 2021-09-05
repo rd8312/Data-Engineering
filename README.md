@@ -1,6 +1,6 @@
 # DataStructures
 
-* [array]()
+* [string & array]()
 - [x] Permumations
 - [ ] Common Elements of three sorted arrays
 - [ ] Dutch Flag Problem
