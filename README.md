@@ -99,8 +99,8 @@
 
 ## Reference Repositories
 
-* [Python Data Structures and Algorithms] (https://github.com/prabhupant/python-ds)
-* [JuliaCollections/DataStructures.jl] (https://github.com/JuliaCollections/DataStructures.jl) 
+* [Python Data Structures and Algorithms](https://github.com/prabhupant/python-ds)
+* [JuliaCollections/DataStructures.jl](https://github.com/JuliaCollections/DataStructures.jl) 
 
 
 
