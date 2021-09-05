@@ -1,7 +1,7 @@
 # DataStructures
 
 * [array]()
-- [ ] Permumations of Word
+- [x] Permumations
 - [ ] Common Elements of three sorted arrays
 - [ ] Dutch Flag Problem
 - [ ] Partition an array into three parts with equal sum
