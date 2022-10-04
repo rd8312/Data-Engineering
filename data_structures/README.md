@@ -1,4 +1,4 @@
-# DataStructures
+# Data Structures
 
 * [strings & arrays]()
 - [x] Permumations
