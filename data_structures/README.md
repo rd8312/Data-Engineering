@@ -64,7 +64,7 @@
 - [ ] kth Largest Element in Stream
 
 * [graphs]()
-- [ ] Adjacency Llist
+- [ ] Adjacency List
 - [ ] Adjacency Matrix
 
 * [hashing]()
