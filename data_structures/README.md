@@ -1,4 +1,4 @@
-# DataStructures
+# Data Structures
 
 * [strings & arrays]()
 - [x] Permumations
@@ -64,25 +64,8 @@
 - [ ] kth Largest Element in Stream
 
 * [graphs]()
-- [ ] Graphs
-- [ ] Adjacency Llist
+- [ ] Adjacency List
 - [ ] Adjacency Matrix
-- [ ] ALL Paths Between Two Vertices 
-- [ ] Bellman Ford
-- [ ] Check if Graph is Tree
-- [ ] Count Edges
-- [ ] Count Paths Between Nodes
-- [ ] Count Sink Nodes
-- [ ] Count Trees
-- [ ] Cycle In Directed Graph
-- [ ] Cycle In Directed Graph Iterative
-- [ ] Cycle In Directed Graph Using Colors
-- [ ] Cycle In Directed Graph Using Colors Recursive
-- [ ] Cycle In Undirected Graph
-- [ ] Cycle In Undirected Graph Iterative
-- [ ] Cycle In Undirected Graph Union Find
-- [ ] Dag Longest Path
-- [ ] Dag Shortest Path
 
 * [hashing]()
 - [ ] Hash Table
