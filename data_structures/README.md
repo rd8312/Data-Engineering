@@ -47,13 +47,11 @@
 - [ ] Remove Duplicates
 - [ ] Delete Last Occurrence
 
-* [binary tree]()
+* [Tree]()
 - [ ] Binary Tree
 - [ ] Red Black Tree
 - [ ] AVL Tree
 - [ ] Fenwick Tree
-
-* [binary search tree]()
 
 * [heap]()
 - [ ] Min Heap
