@@ -6,7 +6,7 @@
 
 ## Graph
 
-- [] Depth first search on graph
+- [ ] Depth first search on graph
 - [X] Breadth first search on graph
 
 
