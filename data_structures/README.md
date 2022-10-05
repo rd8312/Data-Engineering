@@ -63,9 +63,9 @@
 - [ ] Median of Infinite Stream
 - [ ] kth Largest Element in Stream
 
-* [graphs]()
-- [ ] Adjacency List
-- [ ] Adjacency Matrix
+* [graphs](https://github.com/rd8312/Data-Engineering/tree/main/data_structures/graph)
+- [X] Adjacency List
+- [X] Adjacency Matrix
 
 * [hashing]()
 - [ ] Hash Table
