@@ -17,7 +17,7 @@ def breadth_first_search(graph, root):
 
     graph_queue = deque([root])
 
-    while len(graph_queue) > 0:
+    while len(graph_queue) > 0: 
         node = graph_queue.popleft()
         adj_nodes = graph[node]
 
