@@ -1,3 +1,6 @@
+# worst-case time complexity : O(|V|+|E|)
+# worst-case space complexity : O(|V|)
+
 from collections import deque
 
 # A graph implemented by adjacency list
