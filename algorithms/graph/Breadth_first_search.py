@@ -29,3 +29,27 @@ def breadth_first_search(graph, root):
     
     return visited_vertices
     
+
+# def Breadth_first_search(graph, s):
+#     visit_list = []
+#     visit_list.append(s)
+#     Q = deque()
+#     Q.append(s)
+#     while Q:
+#         u = Q.popleft()
+#         for v in graph[u]:
+#             if v in visit_list:
+#                 continue
+#             else:
+#                 visit_list.append(v)
+#                 Q.append(v)
+#     return visit_list
+
+# if __name__ == '__main__':
+#     result =  Breadth_first_search(graph, 'A')
+#     print(result)
+
+#     if result == ['A', 'B', 'G', 'D', 'F', 'E', 'C', 'H']:
+#         print("PASS!")
+#     else :
+#         print("NO PASS!")
