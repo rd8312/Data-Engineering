@@ -1,4 +1,4 @@
-# using list implemented adjacency matrix
+# using list implemented adjacency list
 graph = [['B', 'C'], ['E', 'A'], ['A', 'B', 'E', 'F'], ['B', 'C'], ['C']]
 
 # using dictionary can directly use the vertex labels
