@@ -1,5 +1,5 @@
 # using list implemented adjacency list
-graph = [['B', 'C'], ['E', 'A'], ['A', 'B', 'E', 'F'], ['B', 'C'], ['C']]
+graph = [[1, 2], [0, 5], [0, 1, 5, 6], [], [1, 2], [2]]
 
 # using dictionary can directly use the vertex labels
 # graph = {}
