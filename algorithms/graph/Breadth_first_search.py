@@ -20,7 +20,7 @@ def breadth_first_search(graph, root):
         vertex.data["color"] = "WHITE"
         vertex.data["dis"] = float("inf")
         vertex.data["parent"] = None
-        tree_root.append(vertex)
+        tree_root.insert(vertex)
 
     Q = deque()
     Q.append(root)

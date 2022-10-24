@@ -8,45 +8,21 @@ class AbstractNode:
     def find(self):
         pass
 
-class Leaf(AbstractNode):
-    def __init__(self, data) -> AbstractNode:
-        super().__init__(data)
-
-class CompleteBinaryTree(AbstractNode):
-    def __init__(self, data) -> AbstractNode:
-        super().__init__(data)
-        self.left_child = None
-        self.right_child = None  
-
-    # implement append
-    # def append(self, node):
-    #     if self.left_child == None:
-    #             self.left_child = node
-    #     elif self.right_child == None:
-    #         self.right_child = node
-    #     else:
-    #         if self.left_child.left_child == None:
-    #                 self.left_child.left_child = node
-    #         elif self.left_child.right_child == None:
-    #             self.left_child.right_child = node
-    #         else:
-
-
 class BinarySearchTree(AbstractNode):
     def __init__(self, data) -> AbstractNode:
         super().__init__(data)
         self.left_child = None
         self.right_child = None
 
-    def append(self, node):
+    def insert(self, node):
         if  node.data["data"] < self.data["data"]:
             if self.left_child != None:
-                self.left_child.append(node)
+                self.left_child.insert(node)
             else:
                 self.left_child = node
         else:
             if self.right_child != None:
-                self.right_child.append(node)
+                self.right_child.insert(node)
             else:
                 self.right_child = node
     
