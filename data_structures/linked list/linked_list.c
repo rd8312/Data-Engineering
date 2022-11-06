@@ -95,7 +95,7 @@ void deleteNode(struct Node **head_ref, int target_val)
     {
         *head_ref = temp->next;
         free(temp);
-        return
+        return;
     }
 
     while(temp != NULL && temp->val != target_val)
