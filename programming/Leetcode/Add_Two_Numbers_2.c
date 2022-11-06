@@ -1,10 +1,13 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+//  Definition for singly-linked list.
+# include<stdlib.h>
+# include<stdio.h>
+
+struct ListNode
+{
+    int val;
+    struct ListNode *next;
+};
+
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode* result, *tmp, *prev;
     int carry = 0; int count = 0;
