@@ -3,80 +3,83 @@
 
 void swap(int* a, int* b)
 {
-    int tmp = *a;
+    int tmp= *a;
     *a = *b;
     *b = tmp;
 }
 
 // A function to implement bubble sort
-void bubbleSort(int arr[], int n)
+void BubbleSort(int ary[], int n)
 {
     int i,j;
-
     for (i=0;i<n-1;i++)
     {
-        for(j=0;j<n-i-1;j++)
+        for (j=0;j<n-1-i;j++)
         {
-            if(arr[j]>arr[j+1]) swap(&arr[j], &arr[j+1]);
-        }    
+            if (ary[j]>ary[j+1]) swap(&ary[j], &ary[j+1]);
+        }
     }
-    
+
     return 0;
 }
 
-/*
-// implement bubble sort by linked list
 struct Node
 {
     int val;
-    struct Node *next;
+    struct Node* next;
 };
-    
-void swap(struct Node* node_1, struct Node* node_2)
+
+void swap(struct Node* a, struct Node* b)
 {
-    int temp = node_1->val;
-    node_1->val = node_2->val;
-    node_2->val = temp;
+    int tmp = a->val;
+    a->val = b->val;
+    a->val = tmp;
+
 }
 
-void bubbleSort(struct Node *head)
+void BubbleSort(struct Node* head)
 {
-    int swapped;
-    struct Node *ptr1;
-    struct Node *lptr = NULL; // avoid circular linked list
+    /*
+    struct Node* cur = head;
+
+    if (cur == NULL || cur->next == NULL) return head;
+
+    while (cur)
+    {
+        if (cur->val > cur->next->val) swap(cur, cur->next);
+
+        cur = cur->next;
+    }
+    */
+    
+    // avoid circular linked list
+    struct Node* ptr1 = head;
+    struct Node* lptr = NULL;
 
     if (head == NULL)
     {
         return;
-    }
+    }   
 
-    do
+    while (ptr1->next != lptr)
     {
-        swapped = 0;
-        ptr1 = head;
-
-        while (ptr1->next != lptr)
+        if (ptr1->val > ptr1->next->val)
         {
-            if (ptr1->val > ptr1->next->val)
-            {
-                swap(ptr1, ptr1->next);
-                swapped = 1;
-            }
-
-            ptr1 = ptr1->next;
+            swap(ptr1, ptr1->next);
         }
 
-        lptr = ptr1;
-    } while (swapped);
+        ptr1 = ptr1->next;
+    }
+    
+    lptr = ptr1;
 }
-*/
 
 int main()
 {
     
     int ary[5] = {10, 5, 21, 9 ,11};
     int n;
-    bubbleSort(ary, 5);
+    BubbleSort(ary, 5);
     for (n=0;n<5;n++)
     {
         printf("%d\n",ary[n]);
