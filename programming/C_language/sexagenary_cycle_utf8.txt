@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+
+
+void YEAR(char array[]);
+ 
+int main(int argc, char *argv[]) {
+    char year[100][5], temp[100][5];
+    int j;
+    int i = 0;
+    int total;
+    while(1){
+        gets(temp[i]);
+        if(temp[i][0]=='q'){
+            break;
+        }
+        else{
+            strcpy(year[i], temp[i]);
+            i++;
+        }
+    }
+    total = i;
+    for(j=0;j<total;j++){
+        YEAR(year[j]);
+    }
+ 
+    return 0;
+}
+
+
+void YEAR(char array[]){
+    int num,a,b;
+    num = atof(array);
+    a = (num-3)%10;
+    b = (num-3)%12;
+    printf("%s = ", array);
+    if(a==1){printf("甲");}
+    else if(a==2){printf("乙");}
+    else if(a==3){printf("丙");}
+    else if(a==4){printf("丁");}
+    else if(a==5){printf("戊");}
+    else if(a==6){printf("己");}
+    else if(a==7){printf("庚");}
+    else if(a==8){printf("辛");}
+    else if(a==9){printf("壬");}
+    else if(a==0){printf("癸");}
+    if(b==1){printf("子");}
+    else if(b==2){printf("丑");}
+    else if(b==3){printf("寅");}
+    else if(b==4){printf("卯");}
+    else if(b==5){printf("辰");}
+    else if(b==6){printf("巳");}
+    else if(b==7){printf("午");}
+    else if(b==8){printf("未");}
+    else if(b==9){printf("申");}
+    else if(b==10){printf("酉");}
+    else if(b==11){printf("戌");}
+    else if(b==0){printf("亥");}
+    printf("年\n");
+}
