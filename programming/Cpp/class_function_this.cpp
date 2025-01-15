@@ -18,6 +18,8 @@ double Point::Length(){
 	在成員函式中， this 關鍵字表示所呼叫實例物件的記憶體位址(指標) 
 	this 表示 &p, *this 表示 *&p, 即為 p
 	*/ 
+	// return sqrt((*this).x * (*this).x + (*this).y * (*this).y);
+	// this->x 等同 (*this).x 
 	return sqrt((*this).x * (*this).x + (*this).y * (*this).y);
 }
 
